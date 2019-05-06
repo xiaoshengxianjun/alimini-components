@@ -3,7 +3,7 @@
 
 ### 使用示例
 ```
-<s-switch label="默认地址" checked="{{true}}" onChange="switchChange"></s-switch>
+<s-switch label="switch开关" checked="{{true}}" onChange="switchChange"></s-switch>
 ```
 
 ### 参数说明
