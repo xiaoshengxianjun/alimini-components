@@ -1,6 +1,9 @@
 # SSwitch
 支付宝小程序自定义开关组件
 
+### 示例图片
+![index](https://github.com/xiaoshengxianjun/alimini-components/blob/master/demo/SSwitch.png)
+
 ### 使用示例
 ```
 <s-switch label="switch开关" checked="{{true}}" onChange="switchChange"></s-switch>
@@ -18,3 +21,4 @@
   名称 | 说明
   ---- | ----
   onChange | 在这个方法中可以拿到当前组件开关的结果状态
+
