@@ -1,0 +1,6 @@
+<!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
+<!-- <favorite>收藏小程序，下次使用更方便</favorite> -->
+
+<view>
+  组件列表
+</view>
