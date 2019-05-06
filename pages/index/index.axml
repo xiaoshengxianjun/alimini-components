@@ -2,6 +2,6 @@
 <!-- <favorite>收藏小程序，下次使用更方便</favorite> -->
 
 <view>
-  组件列表
+  组件列表:
 </view>
-<s-switch label="默认" checked></s-switch>
+<s-switch label="switch开关"></s-switch>
