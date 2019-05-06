@@ -14,6 +14,7 @@
   ----  |  -----  |  ----  
   label  |  String  |  开关名称，显示在开关组件右侧的名称，不填为空
   checked  |  Boolean  |  开关状态，打开或关闭，控制组件显示结果
+  disabled  |  Boolean  |  是否禁用，禁用状态组件不可用
   color  |  String  |  开状态颜色，控制组件显示颜色
   type  |  String  |  组件类型，默认胶囊状capsule，可选：方形 square
 
