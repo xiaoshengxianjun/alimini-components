@@ -1,0 +1,7 @@
+<view class="s-switch">
+  <view class="switch-main {{checked?'checked':''}} {{disabled==='false' || disabled===false?'':'disabled'}} {{type==='square'?'square':'capsule'}}"
+   data-checked="{{checked}}" onTap="handleSwitch" style="background:{{bgcolor}};borderColor:{{bdcolor}}">
+  </view>
+  <text>{{label}}  
+  </text>
+</view>

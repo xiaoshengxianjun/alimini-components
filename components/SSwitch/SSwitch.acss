@@ -1,0 +1,62 @@
+.s-switch {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.s-switch .switch-main {
+  position: relative;
+  width: 80rpx;
+  height: 50rpx;
+  border: 1rpx solid #ccc;
+  margin-right: 10rpx;
+}
+
+.s-switch .capsule {
+  border-radius: 26rpx;
+}
+
+.s-switch .square {
+  border-radius: 6rpx;
+  width: 100rpx;
+}
+
+.s-switch .switch-main::after {
+  content: "";
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background: #fff;
+  box-shadow: 0rpx 0rpx 0rpx 1rpx #ccc;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.s-switch .capsule::after {
+  border-radius: 50%;
+}
+
+.s-switch .square::after {
+  border-radius: 6rpx;
+}
+
+.s-switch .checked {
+  background: #f5686f;
+  border-color: #f5686f;
+}
+.s-switch .checked::after{
+  box-shadow: none;
+}
+.s-switch .capsule.checked::after {
+  transform: translateX(29rpx);
+}
+
+.s-switch .square.checked::after {
+  transform: translateX(49rpx);
+}
+
+.s-switch .disabled {
+  opacity: 0.4;
+}

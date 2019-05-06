@@ -4,3 +4,4 @@
 <view>
   组件列表
 </view>
+<s-switch label="默认" checked></s-switch>
