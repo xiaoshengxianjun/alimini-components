@@ -1,5 +1,6 @@
 {
   "usingComponents":{
-    "s-switch": "/components/SSwitch/SSwitch"
+    "s-switch": "/components/SSwitch/SSwitch",
+    "address-picker": "/components/AddressPicker/AddressPicker"
   }
 }

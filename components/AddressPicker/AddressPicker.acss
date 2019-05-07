@@ -1,0 +1,37 @@
+.address-picker {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.address-picker .picker-box {
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-top: 1rpx solid #ececec;
+}
+
+.address-picker .picker-box .btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  border-bottom: 1rpx solid #ececec;
+  font-size: 30rpx;
+}
+
+.picker-box .btn-box text {
+  display: block;
+  padding: 6rpx 30rpx;
+}
+
+.picker-box .btn-box .confirm-btn {
+  color: #f5686f;
+}

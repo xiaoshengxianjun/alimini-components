@@ -4,4 +4,5 @@
 <view>
   组件列表:
 </view>
-<s-switch label="switch开关"></s-switch>
+<s-switch label="switch开关" onChange="switchChange"></s-switch>
+<address-picker visible="{{visible}}" onChange="addressPickerChange"></address-picker>

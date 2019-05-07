@@ -1,0 +1,24 @@
+<view class="address-picker" a:if="{{visible}}">
+  <view class="picker-box">
+    <view class="btn-box">
+      <text class="cancel-btn" catchTap="clickCancel">取消
+      </text>
+      <text class="confirm-btn" catchTap="clickConfirm">确定
+      </text>
+    </view>
+    <picker-view value="{{value}}" onChange="onChange">
+      <picker-view-column>
+        <view a:for="{{addressList}}" a:key="{{index}}">{{item.name}}        
+        </view>
+      </picker-view-column>
+      <picker-view-column>
+        <view a:for="{{addressList[value[0]].sublist}}" a:key="{{index}}">{{item.name}}        
+        </view>
+      </picker-view-column>
+      <picker-view-column>
+        <view a:for="{{addressList[value[0]].sublist[value[1]].sublist}}" a:key="{{index}}">{{item.name}}        
+        </view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
