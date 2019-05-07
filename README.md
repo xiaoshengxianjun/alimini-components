@@ -4,3 +4,4 @@
 ### 自定义组件列表：     
 
 [SSwitch](https://github.com/xiaoshengxianjun/alimini-components/tree/master/components/SSwitch) 
+[AddressPicker](https://github.com/xiaoshengxianjun/alimini-components/tree/master/components/AddressPicker) 
