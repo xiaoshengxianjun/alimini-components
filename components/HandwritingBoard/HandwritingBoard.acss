@@ -1,0 +1,92 @@
+.board-box {
+  width: 670rpx;
+  height: 226rpx;
+  border: 1rpx solid #fbd3de;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.board-box canvas, .board-box image {
+  width: 100%;
+  height: 100%;
+}
+
+.handle-box {
+  padding: 6rpx 0rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.handle-box .color-box {
+  display: flex;
+}
+
+.color-box .color-item {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin: 0rpx 10rpx;
+  transition: 0.3s;
+}
+
+.color-box .color-item.active {
+  position: relative;
+  transform: scale(0.8);
+}
+
+.color-box .color-item.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1rpx solid #ccc;
+  border-radius: 50%;
+  transform: scale(1.25);
+  box-sizing: border-box;
+}
+
+.handwriting-board .handle-box button {
+  font-size: 20rpx;
+  width: 80rpx;
+  height: 40rpx;
+  padding: 0;
+  border-radius: 6rpx;
+  color: #666;
+  line-height: 40rpx;
+  margin-left: 20rpx;
+}
+
+.horizontal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-flow: row-reverse;
+}
+
+.horizontal .board-box {
+  width: calc(100% - 200rpx);
+  height: 90vh;
+}
+
+.horizontal .handle-box {
+  height: 90vh;
+  width: 50rpx;
+  flex-direction: column;
+  padding: 0rpx 20rpx;
+}
+
+.horizontal .handle-box .color-box {
+  flex-direction: column;
+}
+
+.horizontal .handle-box .color-box .color-item {
+  margin: 10rpx 0rpx;
+}
+
+.horizontal .handle-box button {
+  transform: rotate(90deg);
+  margin: 80rpx 0rpx 20rpx;
+}

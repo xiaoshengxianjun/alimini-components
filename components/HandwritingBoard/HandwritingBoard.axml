@@ -1,0 +1,18 @@
+<view class="handwriting-board {{direction}}">
+  <view class="handle-box">
+    <view class="color-box" a:if="{{showColor}}">
+      <block a:for="{{colors}}">
+        <view class="color-item {{item.active?'active':''}}" style="background:{{item.color}}" data-color="{{item.color}}" onTap="clickColorItem">
+        </view>
+      </block>
+    </view>
+    <button type="default" onTap="clickReset">重写</button>
+    <button a:if="{{!filePath}}" type="default" onTap="clickFinish">完成</button>
+    <button type="default" onTap="clickOrientation">{{direction === 'horizontal' ? '返回' : '横版'}}</button>
+  </view>
+  <view class="board-box">
+    <image a:if="{{filePath}}" src="{{filePath}}" mode="aspectFit" />
+    <canvas a:else id="boardCanvas" class="boardCanvas" width="{{canvasWidth}}" height="{{canvasHeight}}" onTouchStart="onTouchStart" onTouchMove="onTouchMove" onTouchEnd="onTouchEnd">
+    </canvas>
+  </view>
+</view>
