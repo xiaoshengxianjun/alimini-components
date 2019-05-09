@@ -8,7 +8,7 @@
     </view>
     <button type="default" onTap="clickReset">重写</button>
     <button a:if="{{!filePath}}" type="default" onTap="clickFinish">完成</button>
-    <button type="default" onTap="clickOrientation">{{direction === 'horizontal' ? '返回' : '横版'}}</button>
+    <button a:if="{{mode === 'two'}}" type="default" onTap="clickOrientation">{{direction === 'horizontal' ? '返回' : '横版'}}</button>
   </view>
   <view class="board-box">
     <image a:if="{{filePath}}" src="{{filePath}}" mode="aspectFit" />

@@ -13,9 +13,15 @@ Component({
   },
   props: {
     showColor: true,
-    mode: "simble"
+    mode: "mini" // 三种模式 缩小版mini,全屏版full,两种模式都有two
   },
   didMount() {
+    // 如果mode为全屏模式，设置direction为horizontal
+    if (this.props.mode === 'full') {
+      this.setData({
+        direction: "horizontal"
+      })
+    }
     this.initCanvas();
   },
   didUpdate() { },
@@ -67,7 +73,7 @@ Component({
      * 触摸动作结束
      */
     onTouchEnd(e) {
-      
+
     },
     /**
      * 颜色选项点击事件
@@ -118,7 +124,7 @@ Component({
       }
       // 清空画板内容后后修改样式, 重置canvas
       this.clickReset();
-      
+
     },
     /**
      * 点击完成，生成画板图片，隐藏canvas画板区域，将生成的图片显示出来
@@ -128,11 +134,11 @@ Component({
       ctx.toTempFilePath({
         width: this.data.canvasWidth,
         height: this.data.canvasHeight,
-        success(e){
-          console.log(e)
+        success(e) {
           that.setData({
             filePath: e.apFilePath
           })
+          that.props.onComplete({ filePath: e.apFilePath });
         }
       })
     }
