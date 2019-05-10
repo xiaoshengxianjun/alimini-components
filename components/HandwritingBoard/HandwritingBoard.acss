@@ -58,9 +58,11 @@
 }
 
 .horizontal {
-  position: absolute;
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
   display: flex;
   align-items: center;
   flex-flow: row-reverse;

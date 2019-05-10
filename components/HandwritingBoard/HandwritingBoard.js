@@ -25,7 +25,9 @@ Component({
     this.initCanvas();
   },
   didUpdate() { },
-  didUnmount() { },
+  didUnmount() {
+    ctx = ""; // 清空ctx元素
+  },
   methods: {
     /**
      * 初始化画板，获取canvas节点对象，设置画板的宽高，线条宽度，样式
@@ -48,13 +50,6 @@ Component({
      * 触摸动作开始
      */
     onTouchStart(e) {
-      var startPoint = {
-        x: e.touches[0].x,
-        y: e.touches[0].y
-      }
-      this.setData({
-        startPoint: startPoint
-      })
       ctx.beginPath();
       ctx.setStrokeStyle(this.data.lineColor); // 设置线条的颜色
       ctx.lineTo(e.touches[0].x, e.touches[0].y);
@@ -106,7 +101,9 @@ Component({
       ctx.clearRect(0, 0, this.data.canvasWidth, this.data.canvasHeight);
       ctx.draw();
       // 重新设置canvas画板节点对象，否则绘画会出问题
-      this.initCanvas();
+      setTimeout(() => {
+        this.initCanvas();
+      }, 100);
     },
     /**
      * 点击“横版”“返回”,如果当前是缩小版，改为横版，否则返回为缩小版
