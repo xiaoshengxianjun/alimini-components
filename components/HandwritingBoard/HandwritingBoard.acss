@@ -63,6 +63,7 @@
   position: absolute;
   top: 0rpx;
   left: 0rpx;
+  background: #ffffff;
   display: flex;
   align-items: center;
   flex-flow: row-reverse;
