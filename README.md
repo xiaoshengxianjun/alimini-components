@@ -6,3 +6,4 @@
 [SSwitch(开关)](https://github.com/xiaoshengxianjun/alimini-components/tree/master/components/SSwitch)   
 [AddressPicker(省市区地址选择器)](https://github.com/xiaoshengxianjun/alimini-components/tree/master/components/AddressPicker)   
 [HandwritingBoard(手写板)](https://github.com/xiaoshengxianjun/alimini-components/tree/master/components/HandwritingBoard)   
+[SSwiper(轮播图)](https://github.com/xiaoshengxianjun/alimini-components/tree/master/components/SSwiper)   
