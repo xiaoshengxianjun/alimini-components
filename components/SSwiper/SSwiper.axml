@@ -1,0 +1,10 @@
+<view class="s-swiper" onTouchStart="onTouchStart" onTouchEnd="onTouchEnd" style="height:{{height}}">
+  <view class="s-swiper-box" style="{{swiperStyle}}">
+    <view a:for="{{list}}" a:for-index="idx" a:key="{{idx}}" style="width:{{itemWidth + 'px'}}" class="s-swiper-item {{index===idx?'active':''}} {{effect}}" data-value="{{item}}" onTap="handleClick">
+      <image src="{{item.img}}" />
+    </view>
+  </view>
+  <view a:if="{{options.showDots}}" class="s-swiper-dots">
+    <view a:for="{{list}}" a:for-index="idx" a:key="{{idx}}" class="s-dots-item {{index===idx?'active':''}}"></view>
+  </view>
+</view>

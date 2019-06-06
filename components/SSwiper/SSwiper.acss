@@ -1,0 +1,52 @@
+.s-swiper {
+  overflow: hidden;
+  height: 300rpx;
+  position: relative;
+}
+
+.s-swiper .s-swiper-box {
+  white-space: nowrap;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.s-swiper .s-swiper-box .s-swiper-item {
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.s-swiper .s-swiper-box .s-swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.s-swiper .s-swiper-box .s-swiper-item.zoom {
+  border-radius: 16rpx;
+  transform: scale(0.93);
+  transition: 0.5s ease;
+}
+
+.s-swiper .s-swiper-box .s-swiper-item.zoom.active {
+  transform: scale(1);
+}
+
+.s-swiper-dots {
+  position: absolute;
+  bottom: 16rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.s-swiper-dots .s-dots-item {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0rpx 4rpx;
+}
+
+.s-swiper-dots .s-dots-item.active {
+  background: #409eff;
+}
