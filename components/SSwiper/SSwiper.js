@@ -57,7 +57,7 @@ Component({
     /**
      * 轮播图点击事件
      */
-    handleClick(e){
+    handleClick(e) {
       this.props.onClick(e);
     },
     /**
@@ -157,7 +157,9 @@ Component({
           index: ++index
         })
         if (this.data.index >= this.props.list.length - 1) {
-          this.data.index = this.props.list.length - 1;
+          this.setData({
+            index: this.props.list.length - 1
+          })
         }
       }
       // 处理当前的滑动
